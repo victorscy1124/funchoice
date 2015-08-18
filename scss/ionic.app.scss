@@ -1,0 +1,137 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// My custom style
+$fontFamily: 'arial','宋体';
+$bodyColor: #ffffff !default;
+$circleBorderRadius: 9999px;
+$opacity: 0.5;
+
+body{
+	background-color: $bodyColor;
+	font-family: $fontFamily;
+}
+
+.circle{
+	border-radius: $circleBorderRadius;
+}
+
+.opacity{
+	opacity: $opacity;
+}
+
+.portal{
+
+	.content{
+		display: table !important;
+		width: 100% !important;
+		height: 100% !important;
+
+		.scroll {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.scroll-bar{
+			display: none;
+		}
+	}
+}
+
+.banner{
+	.slider {
+	  	height: 100%;
+	}
+
+	.content{
+		display: table !important;
+		width: 100% !important;
+		height: 100% !important;
+
+		.scroll {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			padding-bottom:50px;
+		}
+
+		.scroll-bar{
+			display: none;
+		}	
+	}
+}
+
+.signin{
+	display: table !important;
+	width: 100% !important;
+	height: 100% !important;
+
+	.scroll {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.scroll-bar{
+		display: none;
+	}	
+
+	.item{
+		.item-input-wrapper{
+			background-color: #ffffff;
+		}
+	}	
+}
+
+.signup{
+	display: table !important;
+	width: 100% !important;
+	height: 100% !important;
+
+	.scroll {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.scroll-bar{
+		display: none;
+	}
+
+	.item{
+		.item-input-wrapper{
+			background-color: #ffffff;
+		}
+	}
+}
+
+.me{
+	background-color: #f3f3f3;
+
+	.first_part{
+		margin-top:10px;
+	}
+}
+
+
